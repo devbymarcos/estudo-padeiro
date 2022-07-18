@@ -1,0 +1,9 @@
+.map {
+  width: 100%;
+  height: 597px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
