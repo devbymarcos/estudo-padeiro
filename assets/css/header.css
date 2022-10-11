@@ -26,9 +26,10 @@
 }
 .navbar {
   height: 100%;
+  transition: all 0.5s;
 }
 .navbar.active {
-  display: block;
+  left: 0;
 }
 .navbar ul {
   display: flex;
@@ -62,8 +63,12 @@
 @media (max-width: 760px) {
   .navbar {
     width: 100%;
-    display: none;
+    height: 100vh;/* add*/
     margin-top: 1rem;
+    position: absolute;/* add*/
+    top: 52px;/* add*/
+    left: -100%;/* add*/
+    background-color: #000;/* add*/
   }
   .header {
     padding: 1rem 0;
